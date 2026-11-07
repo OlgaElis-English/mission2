@@ -31,6 +31,15 @@ function play(text,voice,slow){
   if(f){cur=new Audio(BASE+'audio/'+f+(slow?'_slow':'')+'.mp3?v='+V);var p=cur.play();if(p&&p.catch)p.catch(function(){});return;}
   try{var u=new SpeechSynthesisUtterance(text);u.lang='en-GB';u.rate=slow?0.6:0.8;speechSynthesis.cancel();speechSynthesis.speak(u);}catch(e){}
 }
+/* сыграть фразу и дождаться конца, потом cb (фраза не обрывается) */
+function playThen(text,voice,cb){var doneF=false;function fin(){if(doneF)return;doneF=true;setTimeout(cb,350);}
+  var k=(voice||'emma')+'|'+text;var f=MAN[k];
+  try{if(cur){cur.pause();}}catch(e){}
+  if(!f){play(text,voice);setTimeout(fin,1500);return;}
+  cur=new Audio(BASE+'audio/'+f+'.mp3?v='+V);var a=cur;
+  a.addEventListener('ended',fin);a.addEventListener('error',function(){setTimeout(fin,800);});
+  var pr=a.play();if(pr&&pr.catch)pr.catch(function(){setTimeout(fin,1200);});
+  setTimeout(fin,9000);}
 function sndRow(text,voice){var r=el('div','row');
   r.appendChild(btn('▶','ico',function(){play(text,voice);}));
   r.appendChild(btn('Медленно','',function(){play(text,voice,true);}));return r;}
@@ -84,8 +93,8 @@ R.pick=function(t,body,next){var items=t.items;var i=0;var first=true;
     var fb=el('div','');
     order.forEach(function(o){var b=btn(o.c,'choice'+(it.pics?' pic':''));if(TEST&&o.k===it.a)b.setAttribute('data-ok','1');
       b.onclick=function(){
-        if(o.k===it.a){b.classList.add('ok');lock();var p=praise();fb.innerHTML='';fb.appendChild(heroSay('thule',p.en,p.ru,true));
-          reward(first);setTimeout(function(){i++;if(i<items.length)round();else next();},1300);}
+        if(o.k===it.a){b.classList.add('ok');lock();var p=praise();fb.innerHTML='';fb.appendChild(heroSay('thule',p.en,p.ru,false));
+          reward(first);playThen(p.en,'thule',function(){i++;if(i<items.length)round();else next();});}
         else{b.classList.add('no');b.disabled=true;if(first){markErr(t,i);first=false;}var e=encourage();fb.innerHTML='';fb.appendChild(heroSay('thule',e.en,e.ru,true));
           if(it.why)fb.appendChild(tx('div','note',it.why));}
       };ch.appendChild(b);});
@@ -107,8 +116,8 @@ R.build=function(t,body,next){var i=0;
     letters.forEach(function(ch){var b=btn(ch,'letter');if(TEST)b.setAttribute('data-ch',ch);b.onclick=function(){
       var need=word.replace(/ /g,'')[pos];
       if(ch===need){pos++;b.disabled=true;b.style.visibility='hidden';slots.appendChild(tx('span','slot',ch));
-        if(pos===word.replace(/ /g,'').length){reward(first);var p=praise();fb.appendChild(heroSay('narius',p.en,p.ru,false));play(it.say||word,it.v);
-          setTimeout(function(){i++;if(i<t.items.length)round();else next();},1400);}}
+        if(pos===word.replace(/ /g,'').length){reward(first);var p=praise();fb.appendChild(heroSay('narius',p.en,p.ru,false));
+          playThen(it.say||word,it.v,function(){playThen(p.en,'narius',function(){i++;if(i<t.items.length)round();else next();});});}}
       else{if(first){markErr(t,i);first=false;}b.classList.add('no');setTimeout(function(){b.classList.remove('no');},400);toast('Не та буква. Подсказка: следующая буква «'+need+'»');}
     };L.appendChild(b);});
     body.appendChild(tx('div','small',(i+1)+' / '+t.items.length));}
@@ -121,7 +130,7 @@ R.order=function(t,body,next){var i=0;
     var slots=el('div','slots');body.appendChild(slots);var L=el('div','letters');body.appendChild(L);var fb=el('div','');body.appendChild(fb);
     shuffle(words.map(function(w,k){return {w:w,k:k};})).forEach(function(o){var b=btn(o.w,'letter');if(TEST)b.setAttribute('data-w',o.w);b.style.fontSize='17px';
       b.onclick=function(){if(o.w===words[pos]){pos++;b.style.visibility='hidden';slots.appendChild(tx('span','slot w',o.w));
-          if(pos===words.length){reward(first);play(it.s,it.v);var p=praise();fb.appendChild(heroSay('narius',p.en,p.ru,false));setTimeout(function(){i++;if(i<t.items.length)round();else next();},1700);}}
+          if(pos===words.length){reward(first);var p=praise();fb.appendChild(heroSay('narius',p.en,p.ru,false));playThen(it.s,it.v,function(){playThen(p.en,'narius',function(){i++;if(i<t.items.length)round();else next();});});}}
         else{if(first){markErr(t,i);first=false;}b.classList.add('no');setTimeout(function(){b.classList.remove('no');},400);toast('Не то слово. Какое слово идёт дальше?');}};
       L.appendChild(b);});
     body.appendChild(tx('div','small',(i+1)+' / '+t.items.length));}
@@ -136,7 +145,7 @@ R.type=function(t,body,next){var i=0;
     var inp=el('input','typ');if(TEST)inp.setAttribute('data-a',it.w);inp.setAttribute('autocomplete','off');inp.setAttribute('autocapitalize','off');inp.setAttribute('spellcheck','false');body.appendChild(inp);
     var fb=el('div','');
     var ok=btn('Проверить','big blue',function(){
-      if(norm(inp.value)===norm(it.w)){reward(first);fb.innerHTML='';var p=praise();fb.appendChild(heroSay('thule',p.en,p.ru,true));ok.disabled=true;setTimeout(function(){i++;if(i<t.items.length)round();else next();},1300);}
+      if(norm(inp.value)===norm(it.w)){reward(first);fb.innerHTML='';var p=praise();fb.appendChild(heroSay('thule',p.en,p.ru,false));ok.disabled=true;playThen(p.en,'thule',function(){i++;if(i<t.items.length)round();else next();});}
       else{if(first){markErr(t,i);first=false;}fb.innerHTML='';var e=encourage();fb.appendChild(heroSay('thule',e.en,e.ru,true));fb.appendChild(tx('div','note','Подсказка: в слове '+it.w.length+' букв, первая «'+it.w[0]+'».'));}});
     body.appendChild(ok);body.appendChild(fb);body.appendChild(tx('div','small',(i+1)+' / '+t.items.length));setTimeout(function(){inp.focus();},400);}
   round();};
@@ -151,7 +160,7 @@ R.memory=function(t,body,next){body.innerHTML='';if(t.prompt)body.appendChild(tx
       b.textContent=c.t;b.classList.add('open');if(c.pic)b.classList.add('pic');if(!c.pic)play(c.say);open.push({b:b,c:c});
       if(open.length===2){var a=open[0],z=open[1];
         if(a.c.k===z.c.k){setTimeout(function(){a.b.classList.add('gone');z.b.classList.add('gone');open=[];left--;reward(true);
-            if(left===0){body.appendChild(heroSay('thule','Well done, soldier!','Отлично, боец!',true));setTimeout(next,1500);}},600);}
+            if(left===0){body.appendChild(heroSay('thule','Well done, soldier!','Отлично, боец!',false));playThen('Well done, soldier!','thule',next);}},600);}
         else{miss++;setTimeout(function(){[a,z].forEach(function(o){o.b.textContent='?';o.b.classList.remove('open','pic');});open=[];},900);}}};
     g.appendChild(b);});
   body.appendChild(g);};
@@ -161,7 +170,7 @@ R.sort=function(t,body,next){body.innerHTML='';if(t.prompt)body.appendChild(tx('
   var pool=el('div','letters');var bins=el('div','bins');
   t.bins.forEach(function(name,bi){var b=el('div','bin');b.appendChild(tx('div','hd',name));
     b.onclick=function(){if(!sel)return;var it=sel.it;
-      if(it.b===bi){sel.btn.remove();b.appendChild(tx('span','',it.w));if(!first[it.w])reward(true);left--;sel=null;if(left===0){body.appendChild(heroSay('thule','Well done, soldier!','Отлично, боец!',true));setTimeout(next,1500);}}
+      if(it.b===bi){sel.btn.remove();b.appendChild(tx('span','',it.w));if(!first[it.w])reward(true);left--;sel=null;if(left===0){body.appendChild(heroSay('thule','Well done, soldier!','Отлично, боец!',false));playThen('Well done, soldier!','thule',next);}}
       else{if(!first[it.w]){first[it.w]=1;S.err[t.key+'#'+it.w]=(S.err[t.key+'#'+it.w]||0)+1;save();}toast('Не сюда. Попробуй другой ящик.');}};
     bins.appendChild(b);});
   shuffle(t.items).forEach(function(it){var b=btn(it.w,'chip');if(TEST)b.setAttribute('data-b',it.b);b.onclick=function(){if(sel)sel.btn.classList.remove('sel');sel={btn:b,it:it};b.classList.add('sel');play(it.say||it.w);};pool.appendChild(b);});
@@ -185,7 +194,7 @@ R.dialog=function(t,body,next){var i=0;
     body.appendChild(tx('div','note','Что ответишь?'));
     var sub={key:t.key,items:[{c:it.c,a:it.a,why:it.why}],keepOrder:false};
     var holder=el('div','');body.appendChild(holder);
-    R.pick(sub,holder,function(){play(it.c[it.a]);setTimeout(function(){i++;if(i<t.items.length)round();else next();},900);});}
+    R.pick(sub,holder,function(){playThen(it.c[it.a],'emma',function(){i++;if(i<t.items.length)round();else next();});});}
   round();};
 /* чтение текста + вопросы */
 R.read=function(t,body,next){body.innerHTML='';var c=el('div','card');c.appendChild(tx('div','hd',t.title||'Разведданные'));
