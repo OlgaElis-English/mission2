@@ -1,0 +1,2209 @@
+{
+ "lines": {
+  "praise": [
+   {
+    "en": "Well done, soldier!",
+    "ru": "Отлично, боец!"
+   },
+   {
+    "en": "Excellent!",
+    "ru": "Превосходно!"
+   },
+   {
+    "en": "Good job, Elisey!",
+    "ru": "Хорошая работа, Елисей!"
+   },
+   {
+    "en": "Perfect shot!",
+    "ru": "Точно в цель!"
+   }
+  ],
+  "encourage": [
+   {
+    "en": "Try again, soldier.",
+    "ru": "Попробуй ещё раз, боец."
+   },
+   {
+    "en": "Almost! Try again.",
+    "ru": "Почти! Ещё попытка."
+   },
+   {
+    "en": "Don't give up!",
+    "ru": "Не сдавайся!"
+   }
+  ]
+ },
+ "planets": [
+  {
+   "name": "Планета Калдерис",
+   "sub": "Еда, like / likes, do / does (модуль 3)",
+   "from": 1,
+   "to": 5
+  },
+  {
+   "name": "Планета Тайфон",
+   "sub": "Ланчбокс, some / any, кафе",
+   "from": 6,
+   "to": 10
+  }
+ ],
+ "gear": [
+  {
+   "en": "a helmet",
+   "ru": "шлем",
+   "cost": 200
+  },
+  {
+   "en": "boots",
+   "ru": "ботинки",
+   "cost": 200
+  },
+  {
+   "en": "a shield",
+   "ru": "щит",
+   "cost": 350
+  },
+  {
+   "en": "armour",
+   "ru": "броня",
+   "cost": 500
+  },
+  {
+   "en": "a sword",
+   "ru": "меч",
+   "cost": 500
+  },
+  {
+   "en": "a radio",
+   "ru": "рация",
+   "cost": 400
+  },
+  {
+   "en": "a big gun",
+   "ru": "большая пушка",
+   "cost": 900
+  },
+  {
+   "en": "a jeep",
+   "ru": "джип",
+   "cost": 1500
+  },
+  {
+   "en": "a tank",
+   "ru": "танк",
+   "cost": 2500
+  },
+  {
+   "en": "a walker",
+   "ru": "шагоход",
+   "cost": 3500
+  }
+ ],
+ "lessons": [
+  {
+   "n": 1,
+   "title": "Еда. I like / I don't like",
+   "point": "Food Depot",
+   "pages": "с. 44-45",
+   "song": {
+    "type": "bc",
+    "title": "Chocolate cake",
+    "url": "https://learnenglishkids.britishcouncil.org/listen-watch/songs/chocolate-cake",
+    "tip": "Где поётся Hands up who likes..., поднимай руку!"
+   },
+   "review": [
+    {
+     "key": "r1a",
+     "type": "pick",
+     "name": "цвета",
+     "prompt": "Послушай и выбери цвет.",
+     "items": [
+      {
+       "say": "red",
+       "c": [
+        "🟥",
+        "🟦",
+        "🟩",
+        "🟨"
+       ],
+       "a": 0,
+       "pics": true
+      },
+      {
+       "say": "green",
+       "c": [
+        "🟥",
+        "🟦",
+        "🟩",
+        "🟨"
+       ],
+       "a": 2,
+       "pics": true
+      },
+      {
+       "say": "yellow",
+       "c": [
+        "🟥",
+        "🟦",
+        "🟩",
+        "🟨"
+       ],
+       "a": 3,
+       "pics": true
+      }
+     ]
+    },
+    {
+     "key": "r1b",
+     "type": "pick",
+     "name": "числа",
+     "prompt": "Послушай и выбери число.",
+     "items": [
+      {
+       "say": "fifteen",
+       "c": [
+        "15",
+        "50",
+        "5"
+       ],
+       "a": 0
+      },
+      {
+       "say": "forty",
+       "c": [
+        "14",
+        "40",
+        "4"
+       ],
+       "a": 1
+      },
+      {
+       "say": "twelve",
+       "c": [
+        "20",
+        "2",
+        "12"
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "key": "r1c",
+     "type": "pick",
+     "name": "to be",
+     "prompt": "Выбери правильное слово.",
+     "items": [
+      {
+       "q": "It ___ a pizza.",
+       "c": [
+        "is",
+        "are",
+        "am"
+       ],
+       "a": 0
+      },
+      {
+       "q": "I ___ a soldier.",
+       "c": [
+        "is",
+        "are",
+        "am"
+       ],
+       "a": 2
+      },
+      {
+       "q": "They ___ burgers.",
+       "c": [
+        "is",
+        "are",
+        "am"
+       ],
+       "a": 1
+      }
+     ]
+    }
+   ],
+   "briefing": {
+    "title": "Брифинг: I like / I don't like",
+    "rule": "Когда тебе <b>нравится</b> еда: <b>I like</b> + еда. Когда <b>не нравится</b>: <b>I don't like</b> + еда. <b>don't</b> = do not = «не». Очень нравится: <b>I love</b>.",
+    "formula": [
+     [
+      [
+       "I",
+       ""
+      ],
+      [
+       "like",
+       "gold"
+      ],
+      [
+       "pizza",
+       ""
+      ]
+     ],
+     [
+      [
+       "I",
+       ""
+      ],
+      [
+       "don't like",
+       "gold"
+      ],
+      [
+       "eggs",
+       ""
+      ]
+     ]
+    ],
+    "examples": [
+     [
+      "I like pizza.",
+      "Я люблю пиццу."
+     ],
+     [
+      "I like chocolate.",
+      "Я люблю шоколад."
+     ],
+     [
+      "I don't like eggs.",
+      "Я не люблю яйца."
+     ],
+     [
+      "I don't like fish.",
+      "Я не люблю рыбу."
+     ],
+     [
+      "I love ice cream!",
+      "Я обожаю мороженое!"
+     ],
+     [
+      "My favourite food is chips.",
+      "Моя любимая еда: картошка фри."
+     ]
+    ],
+    "trap": [
+     [
+      "I not like eggs.",
+      "I don't like eggs.",
+      "«Не» по-английски тут: don't."
+     ],
+     [
+      "I don't likes pizza.",
+      "I don't like pizza.",
+      "Про себя (I) -s не нужно."
+     ]
+    ],
+    "check": [
+     {
+      "key": "b1",
+      "type": "pick",
+      "name": "брифинг",
+      "items": [
+       {
+        "q": "😋 Я люблю пиццу.",
+        "c": [
+         "I like pizza.",
+         "I don't like pizza.",
+         "I not like pizza."
+        ],
+        "a": 0
+       },
+       {
+        "q": "🤢 Я не люблю рыбу.",
+        "c": [
+         "I not like fish.",
+         "I don't like fish.",
+         "I like fish."
+        ],
+        "a": 1
+       },
+       {
+        "q": "«Не» в I don't like это...",
+        "c": [
+         "don't",
+         "not",
+         "no"
+        ],
+        "a": 0
+       }
+      ]
+     }
+    ]
+   },
+   "cheat": [
+    {
+     "t": "I like / I don't like",
+     "lines": [
+      "I like pizza. = Я люблю пиццу.",
+      "I don't like eggs. = Я не люблю яйца.",
+      "I love ice cream! = Я обожаю мороженое!",
+      "My favourite food is chips."
+     ]
+    }
+   ],
+   "tasks": [
+    {
+     "key": "t1a",
+     "type": "pick",
+     "name": "Радиоперехват",
+     "prompt": "Послушай слово и выбери картинку.",
+     "gakul": [
+      "Ha! You don't know food words!",
+      "Ха! Ты не знаешь слов про еду!"
+     ],
+     "items": [
+      {
+       "say": "pizza",
+       "c": [
+        "🍕",
+        "🧀",
+        "🍟",
+        "🍗"
+       ],
+       "a": 0,
+       "pics": true
+      },
+      {
+       "say": "cheese",
+       "c": [
+        "🍕",
+        "🧀",
+        "🍟",
+        "🍗"
+       ],
+       "a": 1,
+       "pics": true
+      },
+      {
+       "say": "chips",
+       "c": [
+        "🍔",
+        "🥚",
+        "🍟",
+        "🍦"
+       ],
+       "a": 2,
+       "pics": true
+      },
+      {
+       "say": "chicken",
+       "c": [
+        "🍗",
+        "🥪",
+        "🍫",
+        "🥦"
+       ],
+       "a": 0,
+       "pics": true
+      },
+      {
+       "say": "eggs",
+       "c": [
+        "🍦",
+        "🥚",
+        "🍔",
+        "🧀"
+       ],
+       "a": 1,
+       "pics": true
+      },
+      {
+       "say": "vegetables",
+       "c": [
+        "🍫",
+        "🍟",
+        "🥦",
+        "🍮"
+       ],
+       "a": 2,
+       "pics": true
+      },
+      {
+       "say": "sandwiches",
+       "c": [
+        "🥪",
+        "🍕",
+        "💧",
+        "🍔"
+       ],
+       "a": 0,
+       "pics": true
+      },
+      {
+       "say": "lemonade",
+       "c": [
+        "🍫",
+        "🍋🥤",
+        "🍗",
+        "🥚"
+       ],
+       "a": 1,
+       "pics": true
+      }
+     ]
+    },
+    {
+     "key": "t1b",
+     "type": "memory",
+     "name": "Память штаба",
+     "prompt": "Найди пары: слово и картинка. Слово прозвучит.",
+     "pairs": [
+      [
+       "pizza",
+       "🍕"
+      ],
+      [
+       "cheese",
+       "🧀"
+      ],
+      [
+       "eggs",
+       "🥚"
+      ],
+      [
+       "burgers",
+       "🍔"
+      ],
+      [
+       "ice cream",
+       "🍦"
+      ],
+      [
+       "chocolate",
+       "🍫"
+      ]
+     ]
+    },
+    {
+     "key": "t1c",
+     "type": "build",
+     "name": "Сборка слова",
+     "prompt": "Нариус чинит слово. Собери его из букв.",
+     "items": [
+      {
+       "w": "pizza",
+       "hint": "🍕",
+       "say": "pizza"
+      },
+      {
+       "w": "cheese",
+       "hint": "🧀",
+       "say": "cheese"
+      },
+      {
+       "w": "chips",
+       "hint": "🍟",
+       "say": "chips"
+      }
+     ]
+    },
+    {
+     "key": "t1d",
+     "type": "pick",
+     "name": "Расшифровка",
+     "prompt": "Прочитай. Нравится или нет?",
+     "items": [
+      {
+       "q": "I like pizza.",
+       "c": [
+        "😋",
+        "🤢"
+       ],
+       "a": 0,
+       "pics": true
+      },
+      {
+       "q": "I don't like eggs.",
+       "c": [
+        "😋",
+        "🤢"
+       ],
+       "a": 1,
+       "pics": true
+      },
+      {
+       "q": "I love chocolate!",
+       "c": [
+        "😋",
+        "🤢"
+       ],
+       "a": 0,
+       "pics": true
+      },
+      {
+       "q": "I don't like fish.",
+       "c": [
+        "😋",
+        "🤢"
+       ],
+       "a": 1,
+       "pics": true
+      }
+     ]
+    },
+    {
+     "key": "t1e",
+     "type": "repeat",
+     "name": "Позывной",
+     "items": [
+      {
+       "s": "What's your favourite food?",
+       "ru": "Какая твоя любимая еда?",
+       "tip": "Голос в конце вопроса идёт вниз: favourite FOOD."
+      },
+      {
+       "s": "My favourite food is pizza.",
+       "ru": "Моя любимая еда: пицца."
+      },
+      {
+       "s": "I like chips. Yum!",
+       "ru": "Я люблю картошку. Вкусно!"
+      },
+      {
+       "s": "I don't like eggs. Yuk!",
+       "ru": "Я не люблю яйца. Фу!"
+      }
+     ]
+    },
+    {
+     "key": "t1f",
+     "type": "order",
+     "name": "Сборка приказа",
+     "prompt": "Собери предложение.",
+     "items": [
+      {
+       "s": "My favourite food is chips.",
+       "ru": "Моя любимая еда: картошка фри."
+      },
+      {
+       "s": "I don't like fish.",
+       "ru": "Я не люблю рыбу."
+      }
+     ]
+    }
+   ],
+   "offline": {
+    "title": "Лего-кухня",
+    "text": "Собери из лего (или слепи из пластилина) 3 блюда из урока. Каждое назови и оцени: <b>I like pizza. Yum!</b> / <b>I don't like eggs. Yuk!</b> Потом спроси маму: <b>What's your favourite food?</b>",
+    "need": "лего или пластилин"
+   },
+   "mama": [
+    "Методика: следите за don't. Типичная ошибка русскоговорящих: I not like.",
+    "Произношение: chips /tʃɪps/ короткое «и», cheese /tʃiːz/ длинное; в like звук /aɪ/.",
+    "I love / I hate: сверх учебника, только устно, не требовать написания.",
+    "Если устал: задание «Позывной» можно сделать за 1 минуту, главное сказать вслух."
+   ]
+  },
+  {
+   "n": 2,
+   "title": "He likes / She doesn't like",
+   "point": "Comms Tower",
+   "pages": "с. 46",
+   "song": {
+    "type": "mg",
+    "title": "Jack Sprat",
+    "text": [
+     "Jack Sprat",
+     "Could eat no fat,",
+     "His wife could eat no lean;",
+     "And so,",
+     "Betwixt them both,",
+     "They licked the platter clean."
+    ]
+   },
+   "review": [
+    {
+     "key": "r2a",
+     "type": "pick",
+     "name": "еда (урок 1)",
+     "prompt": "Послушай и выбери картинку.",
+     "items": [
+      {
+       "say": "chocolate",
+       "c": [
+        "🍫",
+        "🍦",
+        "🍕",
+        "🥚"
+       ],
+       "a": 0,
+       "pics": true
+      },
+      {
+       "say": "burgers",
+       "c": [
+        "🍗",
+        "🍔",
+        "🧀",
+        "🥪"
+       ],
+       "a": 1,
+       "pics": true
+      },
+      {
+       "say": "ice cream",
+       "c": [
+        "🍫",
+        "🥦",
+        "🍦",
+        "🍟"
+       ],
+       "a": 2,
+       "pics": true
+      }
+     ]
+    },
+    {
+     "key": "r2b",
+     "type": "pick",
+     "name": "his / her",
+     "prompt": "His (его) или her (её)?",
+     "items": [
+      {
+       "q": "Dad: ___ name is Eugene.",
+       "c": [
+        "his",
+        "her"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Mum: ___ name is Olga.",
+       "c": [
+        "his",
+        "her"
+       ],
+       "a": 1
+      },
+      {
+       "q": "Nastya: ___ favourite food is pizza.",
+       "c": [
+        "his",
+        "her"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "key": "r2c",
+     "type": "build",
+     "name": "цвета",
+     "prompt": "Собери слово-цвет.",
+     "items": [
+      {
+       "w": "red",
+       "hint": "🟥",
+       "say": "red"
+      },
+      {
+       "w": "green",
+       "hint": "🟩",
+       "say": "green"
+      }
+     ]
+    }
+   ],
+   "briefing": {
+    "title": "Брифинг: he likes, she doesn't like",
+    "rule": "Когда говорим про <b>он, она, оно</b> (he, she, it, Gakul, Dad, Nochka), к like добавляем <b>-s</b>: he like<b>s</b>. Не нравится: <b>doesn't like</b>. Здесь -s уже «спрятан» в doesn't, поэтому like остаётся без -s.",
+    "formula": [
+     [
+      [
+       "He",
+       ""
+      ],
+      [
+       "like",
+       "dash"
+      ],
+      [
+       "s",
+       "gold"
+      ],
+      [
+       "pizza",
+       ""
+      ]
+     ],
+     [
+      [
+       "She",
+       ""
+      ],
+      [
+       "doesn't",
+       "gold"
+      ],
+      [
+       "like",
+       ""
+      ],
+      [
+       "fish",
+       ""
+      ]
+     ]
+    ],
+    "note": "I, you, we, they: like. He, she, it: likes.",
+    "examples": [
+     [
+      "He likes pizza.",
+      "Он любит пиццу."
+     ],
+     [
+      "She likes chocolate.",
+      "Она любит шоколад."
+     ],
+     [
+      "Gakul likes sausages.",
+      "Гакул любит сосиски."
+     ],
+     [
+      "Kvarius likes fish.",
+      "Квариус любит рыбу."
+     ],
+     [
+      "He doesn't like vegetables.",
+      "Он не любит овощи."
+     ],
+     [
+      "Narius doesn't like ice cream.",
+      "Нариус не любит мороженое."
+     ]
+    ],
+    "trap": [
+     [
+      "He like pizza.",
+      "He likes pizza.",
+      "Про он / она нужен -s."
+     ],
+     [
+      "He doesn't likes pizza.",
+      "He doesn't like pizza.",
+      "После doesn't -s не ставим."
+     ]
+    ],
+    "check": [
+     {
+      "key": "b2",
+      "type": "pick",
+      "name": "брифинг",
+      "items": [
+       {
+        "q": "Gakul ___ sausages.",
+        "c": [
+         "like",
+         "likes"
+        ],
+        "a": 1
+       },
+       {
+        "q": "I ___ pizza.",
+        "c": [
+         "like",
+         "likes"
+        ],
+        "a": 0
+       },
+       {
+        "q": "She doesn't ___ fish.",
+        "c": [
+         "like",
+         "likes"
+        ],
+        "a": 0
+       }
+      ]
+     }
+    ]
+   },
+   "cheat": [
+    {
+     "t": "like или likes",
+     "lines": [
+      "I / you / we / they <b>like</b>",
+      "he / she / it / Gakul <b>likes</b>",
+      "He doesn't like fish. (без -s!)"
+     ]
+    }
+   ],
+   "tasks": [
+    {
+     "key": "t2a",
+     "type": "pick",
+     "name": "Выбор боеприпаса",
+     "prompt": "like или likes?",
+     "items": [
+      {
+       "q": "I ___ chips.",
+       "c": [
+        "like",
+        "likes"
+       ],
+       "a": 0
+      },
+      {
+       "q": "He ___ chips.",
+       "c": [
+        "like",
+        "likes"
+       ],
+       "a": 1
+      },
+      {
+       "q": "Gakul ___ burgers.",
+       "c": [
+        "like",
+        "likes"
+       ],
+       "a": 1
+      },
+      {
+       "q": "We ___ ice cream.",
+       "c": [
+        "like",
+        "likes"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Kvarius ___ fish.",
+       "c": [
+        "like",
+        "likes"
+       ],
+       "a": 1
+      },
+      {
+       "q": "They ___ pizza.",
+       "c": [
+        "like",
+        "likes"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "key": "t2b",
+     "type": "read",
+     "name": "Досье разведки",
+     "title": "Досье: что едят герои",
+     "text": [
+      "Gakul likes sausages and chips.",
+      "He doesn't like vegetables.",
+      "Kvarius likes fish. He doesn't like chocolate.",
+      "Davian Thule likes cheese.",
+      "Narius doesn't like ice cream."
+     ],
+     "items": [
+      {
+       "q": "Gakul likes vegetables.",
+       "c": [
+        "Правда",
+        "Ложь"
+       ],
+       "a": 1
+      },
+      {
+       "q": "Kvarius likes fish.",
+       "c": [
+        "Правда",
+        "Ложь"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Thule likes cheese.",
+       "c": [
+        "Правда",
+        "Ложь"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Narius likes ice cream.",
+       "c": [
+        "Правда",
+        "Ложь"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "key": "t2c",
+     "type": "tf",
+     "name": "Приказ штаба",
+     "prompt": "Послушай. Правда это по досье?",
+     "items": [
+      {
+       "say": "Gakul likes chips.",
+       "t": true
+      },
+      {
+       "say": "Kvarius likes chocolate.",
+       "t": false
+      },
+      {
+       "say": "Gakul doesn't like vegetables.",
+       "t": true
+      }
+     ]
+    },
+    {
+     "key": "t2g",
+     "type": "tf",
+     "name": "Детектор лжи: семья",
+     "prompt": "Послушай. Это правда про нашу семью?",
+     "items": [
+      {
+       "say": "Nastya likes pizza.",
+       "t": true
+      },
+      {
+       "say": "Mum likes chips.",
+       "t": false
+      },
+      {
+       "say": "Dad doesn't like fish.",
+       "t": true
+      },
+      {
+       "say": "Elisey likes jelly.",
+       "t": true
+      },
+      {
+       "say": "Nastya likes eggs.",
+       "t": false
+      }
+     ]
+    },
+    {
+     "key": "t2d",
+     "type": "order",
+     "name": "Сборка приказа",
+     "prompt": "Собери предложение.",
+     "items": [
+      {
+       "s": "Gakul doesn't like vegetables.",
+       "ru": "Гакул не любит овощи."
+      },
+      {
+       "s": "Kvarius likes fish.",
+       "ru": "Квариус любит рыбу."
+      }
+     ]
+    },
+    {
+     "key": "t2e",
+     "type": "repeat",
+     "name": "Позывной",
+     "items": [
+      {
+       "s": "He likes pizza.",
+       "ru": "Он любит пиццу.",
+       "tip": "likes: в конце чёткое -s."
+      },
+      {
+       "s": "She doesn't like fish.",
+       "ru": "Она не любит рыбу."
+      },
+      {
+       "s": "Nochka likes sausages.",
+       "ru": "Ночка любит сосиски."
+      }
+     ]
+    },
+    {
+     "key": "t2f",
+     "type": "blitz",
+     "name": "Быстрый огонь",
+     "prompt": "30 секунд: like или likes?",
+     "items": [
+      {
+       "q": "I ___ eggs.",
+       "c": [
+        "like",
+        "likes"
+       ],
+       "a": 0
+      },
+      {
+       "q": "She ___ eggs.",
+       "c": [
+        "like",
+        "likes"
+       ],
+       "a": 1
+      },
+      {
+       "q": "Dad ___ pizza.",
+       "c": [
+        "like",
+        "likes"
+       ],
+       "a": 1
+      },
+      {
+       "q": "You ___ pizza.",
+       "c": [
+        "like",
+        "likes"
+       ],
+       "a": 0
+      },
+      {
+       "q": "It ___ cheese.",
+       "c": [
+        "like",
+        "likes"
+       ],
+       "a": 1
+      },
+      {
+       "q": "We ___ chips.",
+       "c": [
+        "like",
+        "likes"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Gakul ___ sausages.",
+       "c": [
+        "like",
+        "likes"
+       ],
+       "a": 1
+      },
+      {
+       "q": "They ___ jelly.",
+       "c": [
+        "like",
+        "likes"
+       ],
+       "a": 0
+      }
+     ]
+    }
+   ],
+   "offline": {
+    "title": "Холодильник семьи",
+    "text": "Нарисуй холодильник с полками. На каждой полке член семьи или питомец и его любимая еда. Подпиши и расскажи: <b>Nastya likes... Nochka likes sausages. Dad doesn't like...</b> Можно спросить Настю: <b>Nastya, do you like pizza?</b>",
+    "need": "бумага, фломастеры"
+   },
+   "mama": [
+    "Главное правило урока: -s у he / she / it. Если ошибается, спросите: «Про кого? Он? Где -s?»",
+    "Стишок Jack Sprat: про то, кто что не ест (no fat / no lean). Достаточно понять смысл и повторить с ритмом.",
+    "В «Позывном» следите за чётким -s в конце likes."
+   ]
+  },
+  {
+   "n": 3,
+   "title": "Do you like...? Does he like...?",
+   "point": "Bridge",
+   "pages": "с. 46",
+   "song": {
+    "type": "bc",
+    "title": "I don't like eggs (grammar chant)",
+    "url": "https://learnenglishkids.britishcouncil.org/grammar-vocabulary/grammar-chants/i-dont-eggs",
+    "tip": "Повторяй за чантом строчки с don't."
+   },
+   "review": [
+    {
+     "key": "r3a",
+     "type": "pick",
+     "name": "likes (урок 2)",
+     "prompt": "like или likes?",
+     "items": [
+      {
+       "q": "Gakul ___ chips.",
+       "c": [
+        "like",
+        "likes"
+       ],
+       "a": 1
+      },
+      {
+       "q": "I ___ cheese.",
+       "c": [
+        "like",
+        "likes"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Mum doesn't ___ jelly.",
+       "c": [
+        "like",
+        "likes"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "key": "r3b",
+     "type": "type",
+     "name": "Радиограмма",
+     "prompt": "Послушай и напечатай слово.",
+     "items": [
+      {
+       "w": "fish",
+       "say": "fish"
+      },
+      {
+       "w": "eggs",
+       "say": "eggs"
+      }
+     ]
+    },
+    {
+     "key": "r3c",
+     "type": "pick",
+     "name": "Is it...?",
+     "prompt": "Посмотри и ответь.",
+     "items": [
+      {
+       "big": "🍕",
+       "q": "Is it a pizza?",
+       "c": [
+        "Yes, it is.",
+        "No, it isn't."
+       ],
+       "a": 0
+      },
+      {
+       "big": "🍔",
+       "q": "Is it a sandwich?",
+       "c": [
+        "Yes, it is.",
+        "No, it isn't."
+       ],
+       "a": 1
+      }
+     ]
+    }
+   ],
+   "briefing": {
+    "title": "Брифинг: Do или Does?",
+    "rule": "Вопрос в английском начинается с <b>помощника</b>. Про <b>I, you, we, they</b> ставим <b>Do</b>. Про <b>he, she, it</b> и имена (Gakul, Dad, Nochka) ставим <b>Does</b>. -s уходит в Does, поэтому <b>like остаётся без -s</b>!",
+    "formula": [
+     [
+      [
+       "Do",
+       "blue"
+      ],
+      [
+       "you",
+       ""
+      ],
+      [
+       "like",
+       ""
+      ],
+      [
+       "pizza?",
+       ""
+      ]
+     ],
+     [
+      [
+       "Does",
+       "gold"
+      ],
+      [
+       "he",
+       ""
+      ],
+      [
+       "like",
+       "dash"
+      ],
+      [
+       "pizza?",
+       ""
+      ]
+     ]
+    ],
+    "note": "Ответ короткий: Yes, I do / No, I don't. Yes, he does / No, he doesn't.",
+    "examples": [
+     [
+      "Do you like pizza?",
+      "Ты любишь пиццу?"
+     ],
+     [
+      "Yes, I do.",
+      "Да."
+     ],
+     [
+      "Does Gakul like vegetables?",
+      "Гакул любит овощи?"
+     ],
+     [
+      "No, he doesn't.",
+      "Нет."
+     ],
+     [
+      "Does Kvarius like fish?",
+      "Квариус любит рыбу?"
+     ],
+     [
+      "Yes, he does.",
+      "Да."
+     ]
+    ],
+    "trap": [
+     [
+      "Does he likes pizza?",
+      "Does he like pizza?",
+      "После Does like без -s."
+     ],
+     [
+      "Do he like pizza?",
+      "Does he like pizza?",
+      "Про he нужен Does."
+     ],
+     [
+      "Yes, I like.",
+      "Yes, I do.",
+      "Короткий ответ: do / does."
+     ]
+    ],
+    "check": [
+     {
+      "key": "b3",
+      "type": "pick",
+      "name": "брифинг",
+      "items": [
+       {
+        "q": "___ you like chips?",
+        "c": [
+         "Do",
+         "Does"
+        ],
+        "a": 0
+       },
+       {
+        "q": "___ Gakul like sausages?",
+        "c": [
+         "Do",
+         "Does"
+        ],
+        "a": 1
+       },
+       {
+        "q": "Does she ___ fish?",
+        "c": [
+         "like",
+         "likes"
+        ],
+        "a": 0
+       }
+      ]
+     }
+    ]
+   },
+   "cheat": [
+    {
+     "t": "Do или Does",
+     "lines": [
+      "<b>Do</b> I / you / we / they like...?",
+      "<b>Does</b> he / she / it like...? (like без -s!)",
+      "Yes, I do. / No, I don't.",
+      "Yes, he does. / No, he doesn't."
+     ]
+    }
+   ],
+   "tasks": [
+    {
+     "key": "t3a",
+     "type": "pick",
+     "name": "Выбор боеприпаса",
+     "prompt": "Do или Does?",
+     "gakul": [
+      "Ha! Do or does? You can't do it!",
+      "Ха! Do или does? Не справишься!"
+     ],
+     "items": [
+      {
+       "q": "___ you like pizza?",
+       "c": [
+        "Do",
+        "Does"
+       ],
+       "a": 0
+      },
+      {
+       "q": "___ he like eggs?",
+       "c": [
+        "Do",
+        "Does"
+       ],
+       "a": 1
+      },
+      {
+       "q": "___ Gakul like vegetables?",
+       "c": [
+        "Do",
+        "Does"
+       ],
+       "a": 1
+      },
+      {
+       "q": "___ they like chips?",
+       "c": [
+        "Do",
+        "Does"
+       ],
+       "a": 0
+      },
+      {
+       "q": "___ Kvarius like fish?",
+       "c": [
+        "Do",
+        "Does"
+       ],
+       "a": 1
+      },
+      {
+       "q": "___ we like ice cream?",
+       "c": [
+        "Do",
+        "Does"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "key": "t3b",
+     "type": "dialog",
+     "name": "Переговоры",
+     "items": [
+      {
+       "h": "thule",
+       "line": "Do you like pizza?",
+       "ru": "Ты любишь пиццу?",
+       "c": [
+        "Yes, I do.",
+        "Yes, I does.",
+        "Yes, I like."
+       ],
+       "a": 0
+      },
+      {
+       "h": "thule",
+       "line": "Does Gakul like vegetables?",
+       "ru": "Гакул любит овощи?",
+       "c": [
+        "No, he don't.",
+        "No, he doesn't.",
+        "No, he not."
+       ],
+       "a": 1
+      },
+      {
+       "h": "thule",
+       "line": "Does Nastya like eggs?",
+       "ru": "Настя любит яйца?",
+       "c": [
+        "No, she doesn't.",
+        "No, she don't.",
+        "No, she isn't."
+       ],
+       "a": 0
+      },
+      {
+       "h": "gakul",
+       "line": "Do you like orks?",
+       "ru": "Ты любишь орков?",
+       "c": [
+        "No, I don't!",
+        "No, I doesn't!",
+        "No, I not!"
+       ],
+       "a": 0
+      },
+      {
+       "h": "thule",
+       "line": "Does Kvarius like fish?",
+       "ru": "Квариус любит рыбу?",
+       "c": [
+        "Yes, he do.",
+        "Yes, he does.",
+        "Yes, he likes."
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "key": "t3c",
+     "type": "pick",
+     "name": "Диверсант",
+     "prompt": "Диверсант испортил приказ. Где правильно?",
+     "items": [
+      {
+       "q": "Найди правильный вопрос",
+       "c": [
+        "Does he likes pizza?",
+        "Does he like pizza?",
+        "Do he like pizza?"
+       ],
+       "a": 1,
+       "why": "После Does глагол без -s."
+      },
+      {
+       "q": "Найди правильный вопрос",
+       "c": [
+        "Do you like chips?",
+        "Does you like chips?",
+        "You like chips?"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Найди правильный вопрос",
+       "c": [
+        "Do Gakul like fish?",
+        "Does Gakul likes fish?",
+        "Does Gakul like fish?"
+       ],
+       "a": 2
+      }
+     ]
+    },
+    {
+     "key": "t3d",
+     "type": "pick",
+     "name": "Радиоперехват",
+     "prompt": "Послушай вопрос и выбери короткий ответ «да».",
+     "items": [
+      {
+       "say": "Do you like chocolate?",
+       "c": [
+        "Yes, I do.",
+        "Yes, he does."
+       ],
+       "a": 0
+      },
+      {
+       "say": "Does Gakul like chips?",
+       "c": [
+        "Yes, I do.",
+        "Yes, he does."
+       ],
+       "a": 1
+      },
+      {
+       "say": "Do they like burgers?",
+       "c": [
+        "Yes, they do.",
+        "Yes, they does."
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "key": "t3e",
+     "type": "order",
+     "name": "Сборка приказа",
+     "prompt": "Собери вопрос.",
+     "items": [
+      {
+       "s": "Does Gakul like sausages?",
+       "ru": "Гакул любит сосиски?"
+      },
+      {
+       "s": "Do you like ice cream?",
+       "ru": "Ты любишь мороженое?"
+      }
+     ]
+    },
+    {
+     "key": "t3f",
+     "type": "repeat",
+     "name": "Позывной",
+     "items": [
+      {
+       "s": "Do you like pizza?",
+       "ru": "Ты любишь пиццу?",
+       "tip": "В вопросе да / нет голос в конце идёт вверх."
+      },
+      {
+       "s": "Does he like fish?",
+       "ru": "Он любит рыбу?"
+      },
+      {
+       "s": "Yes, he does. No, he doesn't.",
+       "ru": "Да. Нет."
+      }
+     ]
+    }
+   ],
+   "offline": {
+    "title": "Мешок с провизией",
+    "text": "Мама кладёт в непрозрачный мешок 4-5 продуктов с кухни (яблоко, сыр, печенье, морковь). Достань на ощупь и угадай: <b>Is it an apple?</b> Потом спроси маму: <b>Do you like apples?</b> И про папу: <b>Does Dad like apples?</b> Мама отвечает <b>Yes, he does / No, he doesn't</b>.",
+    "need": "мешок, продукты"
+   },
+   "mama": [
+    "Самый важный урок блока: do / does. Если Елисей путается, спрашивайте: «Про кого вопрос? Он? Тогда Does».",
+    "Ловушка: Does he likes. Хвалите, когда сам замечает лишнюю -s.",
+    "Интонация: в вопросах «да / нет» голос в конце поднимается."
+   ]
+  },
+  {
+   "n": 4,
+   "title": "I eat a lot of... Буква Ii",
+   "point": "Radio Mast",
+   "pages": "с. 47, FSP 9-10",
+   "song": {
+    "type": "bc",
+    "title": "I like going out (grammar chant)",
+    "url": "https://learnenglishkids.britishcouncil.org/grammar-vocabulary/grammar-chants/i-going-out",
+    "tip": "Тут like + -ing: I like dancing."
+   },
+   "review": [
+    {
+     "key": "r4a",
+     "type": "pick",
+     "name": "do / does (урок 3)",
+     "prompt": "Do или Does?",
+     "items": [
+      {
+       "q": "___ Nastya like jelly?",
+       "c": [
+        "Do",
+        "Does"
+       ],
+       "a": 1
+      },
+      {
+       "q": "___ you like fish?",
+       "c": [
+        "Do",
+        "Does"
+       ],
+       "a": 0
+      },
+      {
+       "q": "___ Dad like cheese?",
+       "c": [
+        "Do",
+        "Does"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "key": "r4b",
+     "type": "memory",
+     "name": "Память штаба",
+     "prompt": "Найди пары.",
+     "pairs": [
+      [
+       "chips",
+       "🍟"
+      ],
+      [
+       "chicken",
+       "🍗"
+      ],
+      [
+       "sandwiches",
+       "🥪"
+      ],
+      [
+       "vegetables",
+       "🥦"
+      ]
+     ]
+    },
+    {
+     "key": "r4c",
+     "type": "pick",
+     "name": "алфавит",
+     "prompt": "Какая буква идёт дальше?",
+     "items": [
+      {
+       "q": "A, B, C, ...",
+       "c": [
+        "D",
+        "E",
+        "F"
+       ],
+       "a": 0
+      },
+      {
+       "q": "K, L, M, ...",
+       "c": [
+        "O",
+        "N",
+        "P"
+       ],
+       "a": 1
+      }
+     ]
+    }
+   ],
+   "briefing": {
+    "title": "Брифинг: I like dancing",
+    "rule": "После <b>like / love</b> можно поставить <b>действие</b>. Тогда к нему добавляем <b>-ing</b>: dance → danc<b>ing</b>, swim → swim<b>ming</b>, sing → sing<b>ing</b>.",
+    "formula": [
+     [
+      [
+       "I",
+       ""
+      ],
+      [
+       "like",
+       ""
+      ],
+      [
+       "danc",
+       "dash"
+      ],
+      [
+       "ing",
+       "gold"
+      ]
+     ],
+     [
+      [
+       "I",
+       ""
+      ],
+      [
+       "don't like",
+       ""
+      ],
+      [
+       "paint",
+       ""
+      ],
+      [
+       "ing",
+       "gold"
+      ],
+      [
+       "at all!",
+       ""
+      ]
+     ]
+    ],
+    "examples": [
+     [
+      "I like dancing.",
+      "Я люблю танцевать."
+     ],
+     [
+      "I love swimming!",
+      "Я обожаю плавать!"
+     ],
+     [
+      "I don't like painting at all.",
+      "Я совсем не люблю рисовать."
+     ],
+     [
+      "Do you like singing?",
+      "Ты любишь петь?"
+     ],
+     [
+      "I eat a lot of biscuits.",
+      "Я ем много печенья."
+     ],
+     [
+      "I don't eat much rice.",
+      "Я ем мало риса."
+     ]
+    ],
+    "trap": [
+     [
+      "I like dance.",
+      "I like dancing.",
+      "После like действие с -ing."
+     ]
+    ],
+    "check": [
+     {
+      "key": "b4",
+      "type": "pick",
+      "name": "брифинг",
+      "items": [
+       {
+        "q": "I like ___.",
+        "c": [
+         "swimming",
+         "swim"
+        ],
+        "a": 0
+       },
+       {
+        "q": "Do you like ___?",
+        "c": [
+         "sing",
+         "singing"
+        ],
+        "a": 1
+       },
+       {
+        "q": "I don't like painting ___ all.",
+        "c": [
+         "at",
+         "in"
+        ],
+        "a": 0
+       }
+      ]
+     }
+    ]
+   },
+   "cheat": [
+    {
+     "t": "like + -ing",
+     "lines": [
+      "I like dancing. I love swimming.",
+      "I don't like painting at all.",
+      "I eat a lot of biscuits.",
+      "I don't eat much rice."
+     ]
+    },
+    {
+     "t": "Буква Ii",
+     "lines": [
+      "/aɪ/ как «ай»: ice cream, like, rice, nine, kite",
+      "/ɪ/ короткое «и»: biscuits, big, milk, fish, chicken"
+     ]
+    }
+   ],
+   "tasks": [
+    {
+     "key": "t4a",
+     "type": "type",
+     "name": "Шифровка орков",
+     "cipher": true,
+     "prompt": "Перехвачена рация Гакула! Расшифруй, что он любит есть. Напечатай слово.",
+     "gakul": [
+      "You can't read my secret code! Ha!",
+      "Мой шифр тебе не прочитать! Ха!"
+     ],
+     "items": [
+      {
+       "code": "URHS",
+       "w": "fish"
+      },
+      {
+       "code": "XSRKH",
+       "w": "chips"
+      },
+      {
+       "code": "KRAAZ",
+       "w": "pizza"
+      }
+     ]
+    },
+    {
+     "key": "t4b",
+     "type": "sort",
+     "name": "Звуковой радар",
+     "prompt": "Как звучит буква i: «ай» или короткое «и»?",
+     "bins": [
+      "/aɪ/ «ай»",
+      "/ɪ/ «и»"
+     ],
+     "items": [
+      {
+       "w": "ice cream",
+       "b": 0
+      },
+      {
+       "w": "like",
+       "b": 0
+      },
+      {
+       "w": "rice",
+       "b": 0
+      },
+      {
+       "w": "nine",
+       "b": 0
+      },
+      {
+       "w": "kite",
+       "b": 0
+      },
+      {
+       "w": "biscuits",
+       "b": 1
+      },
+      {
+       "w": "big",
+       "b": 1
+      },
+      {
+       "w": "milk",
+       "b": 1
+      },
+      {
+       "w": "fish",
+       "b": 1
+      },
+      {
+       "w": "chicken",
+       "b": 1
+      }
+     ]
+    },
+    {
+     "key": "t4c",
+     "type": "pick",
+     "name": "Радиоперехват",
+     "prompt": "Послушай и выбери картинку.",
+     "items": [
+      {
+       "say": "biscuits",
+       "c": [
+        "🍪",
+        "🍚",
+        "🥛",
+        "🐟"
+       ],
+       "a": 0,
+       "pics": true
+      },
+      {
+       "say": "rice",
+       "c": [
+        "🍪",
+        "🍚",
+        "🥛",
+        "🪁"
+       ],
+       "a": 1,
+       "pics": true
+      },
+      {
+       "say": "milk",
+       "c": [
+        "🐟",
+        "🍪",
+        "🥛",
+        "🍚"
+       ],
+       "a": 2,
+       "pics": true
+      },
+      {
+       "say": "kite",
+       "c": [
+        "🪁",
+        "🐟",
+        "🍪",
+        "🥛"
+       ],
+       "a": 0,
+       "pics": true
+      }
+     ]
+    },
+    {
+     "key": "t4d",
+     "type": "read",
+     "name": "Разведданные",
+     "title": "Что ест Гакул",
+     "text": [
+      "Gakul eats a lot of sausages.",
+      "He likes chips and burgers.",
+      "He doesn't eat much rice.",
+      "He doesn't like vegetables at all!",
+      "His pet crocodile Kvarius eats a lot of fish."
+     ],
+     "items": [
+      {
+       "q": "Gakul eats a lot of...",
+       "c": [
+        "sausages",
+        "rice",
+        "vegetables"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Does Gakul like vegetables?",
+       "c": [
+        "Yes, he does.",
+        "No, he doesn't."
+       ],
+       "a": 1
+      },
+      {
+       "q": "Kvarius eats a lot of...",
+       "c": [
+        "chips",
+        "fish",
+        "milk"
+       ],
+       "a": 1
+      }
+     ]
+    },
+    {
+     "key": "t4e",
+     "type": "dialog",
+     "name": "Переговоры",
+     "items": [
+      {
+       "h": "thule",
+       "line": "Do you like dancing?",
+       "ru": "Ты любишь танцевать?",
+       "c": [
+        "I love dancing!",
+        "I love dance!",
+        "I loves dancing!"
+       ],
+       "a": 0
+      },
+      {
+       "h": "thule",
+       "line": "What about painting?",
+       "ru": "А рисовать?",
+       "c": [
+        "I don't like painting at all.",
+        "I don't like paint at all.",
+        "I not like painting."
+       ],
+       "a": 0
+      },
+      {
+       "h": "gakul",
+       "line": "Do you like swimming?",
+       "ru": "Ты любишь плавать?",
+       "c": [
+        "Yes, I do!",
+        "Yes, I am!",
+        "Yes, I like swim!"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "key": "t4f",
+     "type": "write",
+     "name": "Донесение",
+     "prompt": "Напиши 3 предложения о себе: что ешь много, что любишь, что любишь делать. Можно по образцу.",
+     "sample": [
+      "I eat a lot of pizza.",
+      "I like chocolate.",
+      "I love swimming."
+     ]
+    }
+   ],
+   "offline": {
+    "title": "Ответная шифровка",
+    "text": "Напиши маме на бумаге шифровку орков (A=Z, B=Y...) из 3-4 слов, например <b>I LIKE PIZZA</b>. Мама расшифровывает. Потом пантомима: показываете друг другу действия (singing, swimming, running, dancing, painting), другой угадывает и спрашивает: <b>Do you like swimming?</b>",
+    "need": "бумага, ручка"
+   },
+   "mama": [
+    "like + -ing взято из учебника, раздел Further Speaking Practice 9-10.",
+    "Буква Ii: проверьте, что в like, rice, kite звучит «ай», а в milk, fish, big короткое «и».",
+    "Донесение: исправляйте мягко, главное 3 предложения. Нажимайте «Мама проверила», когда прочитали."
+   ]
+  },
+  {
+   "n": 5,
+   "title": "Штурм крепости Калдерис",
+   "point": "Fortress Calderis",
+   "pages": "повтор с. 44-47",
+   "fortress": true,
+   "review_lesson": true,
+   "from": 1,
+   "song": {
+    "type": "tb",
+    "title": "These are just some of my favourite things",
+    "where": "с. 44",
+    "tip": "Песня из учебника: включите аудио к учебнику или пойте по тексту на с. 44."
+   },
+   "review": [],
+   "cheat": [
+    {
+     "t": "like / likes",
+     "lines": [
+      "I like. He likes. He doesn't like."
+     ]
+    },
+    {
+     "t": "Do / Does",
+     "lines": [
+      "Do you like...? Does he like...?",
+      "Yes, I do. Yes, he does."
+     ]
+    }
+   ],
+   "tasks": [
+    {
+     "key": "t5a",
+     "type": "blitz",
+     "name": "Быстрый огонь",
+     "prompt": "30 секунд! Do / Does / like / likes.",
+     "items": [
+      {
+       "q": "___ you like fish?",
+       "c": [
+        "Do",
+        "Does"
+       ],
+       "a": 0
+      },
+      {
+       "q": "___ he like fish?",
+       "c": [
+        "Do",
+        "Does"
+       ],
+       "a": 1
+      },
+      {
+       "q": "She ___ chips.",
+       "c": [
+        "like",
+        "likes"
+       ],
+       "a": 1
+      },
+      {
+       "q": "Does Gakul ___ rice?",
+       "c": [
+        "like",
+        "likes"
+       ],
+       "a": 0
+      },
+      {
+       "q": "I ___ pizza.",
+       "c": [
+        "like",
+        "likes"
+       ],
+       "a": 0
+      },
+      {
+       "q": "___ they like eggs?",
+       "c": [
+        "Do",
+        "Does"
+       ],
+       "a": 0
+      },
+      {
+       "q": "Kvarius ___ fish.",
+       "c": [
+        "like",
+        "likes"
+       ],
+       "a": 1
+      },
+      {
+       "q": "He doesn't ___ jelly.",
+       "c": [
+        "like",
+        "likes"
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "key": "t5b",
+     "type": "type",
+     "name": "Радиограмма",
+     "prompt": "Послушай и напечатай слово.",
+     "items": [
+      {
+       "w": "cheese",
+       "say": "cheese"
+      },
+      {
+       "w": "milk",
+       "say": "milk"
+      },
+      {
+       "w": "chips",
+       "say": "chips"
+      }
+     ]
+    },
+    {
+     "key": "t5c",
+     "type": "dialog",
+     "name": "Переговоры с Гакулом",
+     "items": [
+      {
+       "h": "gakul",
+       "line": "Do you like vegetables?",
+       "ru": "Ты любишь овощи?",
+       "c": [
+        "Yes, I do.",
+        "Yes, I does."
+       ],
+       "a": 0
+      },
+      {
+       "h": "gakul",
+       "line": "Does your sister like pizza?",
+       "ru": "Твоя сестра любит пиццу?",
+       "c": [
+        "Yes, she does.",
+        "Yes, she do."
+       ],
+       "a": 0
+      },
+      {
+       "h": "gakul",
+       "line": "Ha! What's your favourite food?",
+       "ru": "Ха! Какая твоя любимая еда?",
+       "c": [
+        "My favourite food is pizza.",
+        "My favourite food are pizza."
+       ],
+       "a": 0
+      }
+     ]
+    },
+    {
+     "key": "t5d",
+     "type": "order",
+     "name": "Последний приказ",
+     "prompt": "Собери и захвати крепость!",
+     "items": [
+      {
+       "s": "Gakul doesn't like vegetables.",
+       "ru": "Гакул не любит овощи."
+      },
+      {
+       "s": "Does Kvarius like fish?",
+       "ru": "Квариус любит рыбу?"
+      }
+     ]
+    }
+   ],
+   "offline": {
+    "title": "Опрос штаба",
+    "text": "Нарисуй таблицу: слева имена семьи, сверху 4 блюда. Опроси всех: <b>Do you like...?</b> Поставь галочки и прочитай итог: <b>Mum likes fish. Nastya doesn't like...</b>",
+    "need": "бумага, ручка"
+   },
+   "mama": [
+    "Разбор полётов: в начале урока задания, где были ошибки в уроках 1-4. Если ошибок не было, сразу «бой за крепость».",
+    "Песня с. 44: аудио к учебнику (если есть) или пойте по тексту.",
+    "После штурма Елисей может купить первое снаряжение в Арсенале."
+   ]
+  }
+ ]
+}
